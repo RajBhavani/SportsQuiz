@@ -90,9 +90,7 @@ var Quiz = {
     ];
 
     var admonishments = [
-      "You suck!",
-      "Brush up on your pointless knowledge",
-      "Pick up a book and try reading for once"
+        "Pick up a book and try reading for once"
     ];
 
     // another tenrary operator
