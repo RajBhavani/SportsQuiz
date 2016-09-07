@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" name="description" content="difficult choice">
+
+  <title> Quiz Game</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="grid.css"> 
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <main></main>
+
+  </div>
+
+  
+  <div style="display:none;">
+
+    <div id="js-start-template">
+      <h1>Quiz App</h1>
+      <p>If you like  to  improve your GK Skills</p>
+      <form name="game-start">
+        <button type="submit">start</button>
+      </form>
+    </div>
+
+    <div id="js-question-template">
+      <h3><span class="js-question-count"></span><span class="js-question-text"></span></h3>
+      <form name="current-question">
+        <ol type="A" class="js-choices"></ol>
+        <button type="submit">Submit</button>
+        <button class="js-restart-game">Start over</button>
+      </form>
+
+    </div>
+
+    <div id="js-choice-template">
+      <li>
+        <input type="radio" name="user-answer" required>
+        <label></label>
+      </li>
+    </div>
+
+    <div id="js-answer-feedback-template">
+      <div class="js-feedback-container">
+        <div class="js-feedback-header"></div>
+        <p class="js-feedback-text"></p>
+        <button class="js-see-next"></button>
+      </div>
+    </div>
+
+    <div id="js-final-feedback-template">
+      <h1>Results</h1>
+      <p class="js-results-text"></p>
+      <button class="js-restart-game">Start over</button>
+    </div>
+
+  </div>
+   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
